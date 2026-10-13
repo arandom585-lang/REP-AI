@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F8F7F4;
+  --foreground: #282722;
+  --muted: #77756E;
+  --border: #E8E5DF;
+  --surface: #FFFFFF;
+  --accent: #C76542;
+  --accent-hover: #B55938;
+  --hover-bg: #F0EEE9;
+}
+
+@theme {
+  --color-brand-bg: #F8F7F4;
+  --color-brand-surface: #FFFFFF;
+  --color-brand-text: #282722;
+  --color-brand-muted: #77756E;
+  --color-brand-border: #E8E5DF;
+  --color-brand-accent: #C76542;
+  --color-brand-accent-hover: #B55938;
+  --color-brand-hover: #F0EEE9;
+}
+
+html, body {
+  background-color: #F8F7F4;
+  color: #282722;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Restrained selection color like Claude */
+::selection {
+  background-color: #F0EEE9;
+  color: #282722;
+}
+
+/* Subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8E5DF;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D5D1C8;
+}
